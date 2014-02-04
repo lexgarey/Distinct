@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<section class="main" role="main">
+    
+    <div class="col-md-8">
+      {{#foreach posts}} {{! Each post will be output using this markup }}
+      <article class="articles">
+          <h1 class="title"><a href="{{url}}">{{title}}</a></h1>
+          <p class="author">Published {{date published_at timeago="true"}} by {{author.name}}</p>
+          {{content}}
+          <section class="post-share social">
+              <h4>Like what you read? Share with your friends!
+              <a class="fa fa-twitter fa-lg" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <span class="hidden">Twitter</span>
+              </a>
+              <a class="fa fa-facebook fa-lg" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <span class="hidden">Facebook</span>
+              </a>
+            </h4>
+            </section>
+      </article>
+      {{/foreach}}
+    </div>
+</section>

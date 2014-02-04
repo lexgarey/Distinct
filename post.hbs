@@ -1,0 +1,41 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+
+      <article class="articles col-md-8">
+        {{#post}}
+          <h1 class="title">{{title}}</h1>
+          <p class="author">Published by {{author.name}}, {{date published_at timeago="true"}}</p>
+          {{content}}
+          <section class="post-share social">
+              <h4>Like what you read? Share with your friends!</h4>
+              <a class="fa fa-twitter fa-lg" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <span class="hidden">Twitter</span>
+              </a>
+              <a class="fa fa-facebook fa-lg" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <span class="hidden">Facebook</span>
+              </a>
+            </section>
+            <div class="list">
+            <p>Join the List!</p>
+            <div id="mc_embed_signup">
+          <form action="http://gmail.us1.list-manage.com/subscribe/post?u=837031f7e19636f9a2f6d62c1&amp;id=ff6d3fd1f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="mc-field-group">
+            <input type="text" value="" name="FNAME" class="required form-control" id="mce-FNAME" placeholder="Your Name">
+          </div>
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your Email">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+          </form>
+        </div>
+    {{/post}}
+</article>
