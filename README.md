@@ -1,0 +1,4 @@
+Distinct
+========
+
+A Ghost theme
