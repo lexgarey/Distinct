@@ -78,7 +78,8 @@ a {
     color: #d44e42;
     margin-top: 0; }
   .intro .photo {
-    margin-left: 25px; }
+    margin-left: 25px;
+    padding-top: 3%; }
   .intro .social {
     text-align: center;
     padding: 5%; }
