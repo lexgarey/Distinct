@@ -9,100 +9,49 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}">
+    <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" href="{{asset "components/normalize-css/normalize.css"}}" />
     <link rel="stylesheet" href="{{asset "components/bootstrap/dist/css/bootstrap.min.css"}}" />
     <link rel="stylesheet" href="{{asset "components/font-awesome/css/font-awesome.min.css"}}" />
     <link rel="stylesheet" href="{{asset "dist/styles/style.css"}}" />
-    <link rel="stylesheet" href="{{asset "dist/styles/headshrinker.css"}}" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
   </head>
    <body class="{{body_class}}">
-
+  
     <div class="container">
-      <nav class="red-head">
-        <ul class="col-md-offset-4 col-md-7">
-          <li><a href="">About</a></li>
-          <li><a href="">Work</a></li>
-          <li><a href="">Writing</a></li>
-          <li><a href="">Contact</a></li>
+      <nav class="nav">
+        <ul>
+          <li class="logo"><a href="/"><img src="{{@blog.logo}}"></a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
+  
       </nav>
-    </div>
-     
-      <!--<header class="header">
-           <div class="container">
-            <div class="row">
-              <h1 class="col-md-4 heading"><a href="/" alt="Home"><img src="{{asset "images/logo_red.png"}}"></a>
-              </h1>  
-              <nav id="navigation">
-                <ul>
-                  <li><a href="/about">About</a></li>
-                  <li><a href="/">Blog</a></li>
-                  <li><a href="/work">Work</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-      </header> -->
+
 
       <div class="content">
-      <div class="container">
         {{{body}}}
 
-        <!--<aside class="sidebar col-md-offset-1 col-md-3">
-          <div class="about">
-            <img src="{{asset "images/lex_bw.jpg"}}" alt="" class="img-responsive img-circle">
-             <p> Ideator. Maker. Writer</p>
-             <p class="social">
-              <a href="http://www.twitter.com/lexgarey"><span class="pictogram">&#62217;</span></a> <a href="http://www.github.com/lexgarey"><span class="pictogram">&#62208;</span></a>
-          </div>
-
-          
-          <div class="list">
-            <p>Join the List!</p>
-            <div id="mc_embed_signup">
-          <form action="http://gmail.us1.list-manage.com/subscribe/post?u=837031f7e19636f9a2f6d62c1&amp;id=ff6d3fd1f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="mc-field-group">
-            <input type="text" value="" name="FNAME" class="required form-control" id="mce-FNAME" placeholder="Your Name">
-          </div>
-          <div class="mc-field-group">
-            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your Email">
-          </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-          </form>
-        </div>
-          </div>
-        </aside>
-      </div>
-    </div>-->
+  </div>
 
     <footer class="footer">
-      <div class="container">
         <div class="row">
           <div class="col-md-offset-6 col-md-6">
-        <p>Made with &hearts; in Portland, Oregon.</p>
-        <p>Proudly powered by <a href="http://ghost.org">Ghost</a></p>
-
-      </div>
-      </div>
-      </div>
+            <p>Made with &hearts; in Portland, Oregon.</p>
+            <p>Proudly powered by <a href="http://ghost.org">Ghost</a></p>
+          </div>
+        </div>
     </footer>
     
     {{! Ghost outputs important scripts and data with this tag }}
@@ -110,16 +59,6 @@
 
     {{! Scripts & Stuff}}
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
-    <script src="{{asset "dist/scripts/jquery.headshrinker.js"}}"></script> 
-    <script>
-      jQuery(document).ready(function () {
-        jQuery('header').headshrinker({ 
-          shrinkBy: 0,
-          revealTop: "20", // adjust top positioning of hamburger menu
-          shrinkMenuTop: "85px", // adjust top positioning of the flyout menu
-          mobileMenu: true 
-        });
-      });
-    </script>
+  
   </body>
 </html>

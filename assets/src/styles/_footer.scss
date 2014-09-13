@@ -1,8 +1,14 @@
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
   margin-top: 3.5%;
   background: #FFF;
-  padding: 1%;
+  /*padding: 1%;*/
   text-align: right;
+  font-size: 16px;
   a {
     color: $primary-color;
     text-decoration: underline;

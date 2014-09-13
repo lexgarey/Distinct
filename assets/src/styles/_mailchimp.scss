@@ -1,0 +1,17 @@
+.list {
+  margin: 5% 0;
+}
+
+.btn {
+  color: #FFF;
+  border-radius: 0;
+  background: $primary-color; 
+  font-size: 17px;
+  &:hover {
+    @include transition;
+    background: #d44e42;
+    color: #FFF;
+    text-decoration: none;
+    opacity: 1;
+  }
+}

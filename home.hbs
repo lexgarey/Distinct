@@ -1,0 +1,47 @@
+{{!< default}}
+
+<div class="row intro">
+  <div class="col-md-4 col-sm-4 photo">
+    <img src="{{asset "images/lex_bw_sm.jpg"}}" class="img-responsive img-circle" alt="Photo of Lex Garey">
+    <p class="social">
+      <a href="http://www.twitter.com/lexgarey"><span class="pictogram">&#62217;</span></a>
+      <a href="http://www.github.com/lexgarey"><span class="pictogram">&#62208;</span></a>
+    <p>
+  </div>
+  <div class="col-md-7 col-sm-7">
+    <h1 class="hi">Hi, I'm Lex Garey.</h1>
+    <h2>I build websites &amp wear bowties.</h2>
+    <p> I'm a front-end designer and developer with a keen interest in how technology can be used to create stronger communities and human connection. </p> 
+    <p>I am an empath, Sagittarius, and a feminist. </p>
+      <div class="list">
+        <form class="form-inline list" role="form" action="http://gmail.us1.list-manage.com/subscribe/post?u=837031f7e19636f9a2f6d62c1&amp;id=ff6d3fd1f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
+        <div class="form-group">
+          <label for="mce-FNAME" class="sr-only">
+            Your First Name 
+          </label>
+          <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Your First Name">
+        </div>
+        <div class="form-group">
+          <label for="mce-EMAIL" class="sr-only">
+            Your Email Address
+          </label>
+          <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your Email">
+        </div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+        </form>
+      </div>
+    </div>
+</div>
+<div class="container main">
+  <div class="row">
+    {{#foreach posts}}
+    <div class="col-md-4">
+        <h1 class="title"><a href="{{url}}">{{title}}</a></h1>
+        <p class="author">Published by {{author.name}}, {{date published_at timeago="true"}}</p>
+    </div>
+  <div class="col-md-7 post-content">
+        {{excerpt}}
+     </div>
+      {{/foreach}}
+</div>
+</div>

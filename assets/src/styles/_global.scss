@@ -1,0 +1,83 @@
+// Variables
+
+$primary-color: #d44e42;
+$secondary-color: #666;
+
+
+// Mixins
+
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+    -web-kit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+}
+
+// Styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-family: 'Lato', Helvetica;
+  font-size: 20px;
+}
+
+@font-face {
+    font-family: 'entypo';
+    src: url('../fonts/entypo.eot');
+    src: url('../fonts/entypo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/entypo.woff') format('woff'),
+         url('../fonts/entypo.ttf') format('truetype'),
+         url('../fonts/entypo.svg#entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'entypo-social';
+    src: url('../fonts/entypo-social.eot');
+    src: url('../fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/entypo-social.woff') format('woff'),
+         url('../fonts/entypo-social.ttf') format('truetype'),
+         url('../fonts/entypo-social.svg#entypo-social') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: 'entypo', 'entypo-social';
+  content: attr(data-icon);
+}
+
+.pictogram {
+  font-family: 'entypo', 'entypo-social';
+  font-size: 2em;
+  font-weight: normal;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 200;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    @include transition;
+    color: $secondary-color;
+  }
+}
+
+.accent {
+  color: $primary-color;
+}
