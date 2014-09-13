@@ -1,8 +1,8 @@
-##  Starter.ghost
-Twitter Bootstrap 3 theme for Ghost.js.
-Written as starter template for future themes. For example, I made [Supernova][3] starting with this theme.
+##  Distinct Theme for Ghost
 
-![Starter.ghost][1]
+![Distinct screenshot](screenshot.png)
+
+A minimal theme for Ghost, using Starter.ghost for a base
 
 ### Features
 
