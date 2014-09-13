@@ -5,8 +5,59 @@
 
 {{! The main content area on the homepage }}
 <section class="main" role="main">
+
+<div class="row intro">
+  <div class="col-md-4">
+    <img src="{{asset "images/lex_bw_sm.jpg"}}" class="img-responsive" alt="Photo of Lex Garey">
+  <p class="social">
+    <a href="http://www.twitter.com/lexgarey"><span class="pictogram">&#62217;</span></a> <a href="http://www.github.com/lexgarey"><span class="pictogram">&#62208;</span></a><p>
+  </div>
+  <div class="col-md-7">
+    <h1 class="hi">Hi, I'm Lex Garey.</h1>
+    <h2>I build websites &amp wear bowties.</h2>
+    <p> I'm a frontend designer and developer, deeply focusing on how technology can better the lives of transgender and queer people.</p> 
+    <p>I am an empath, introvert, and a feminist. </p>
+    <div class="list">
+            <p>Join the List!</p>
+            <div id="mc_embed_signup">
+          <form action="http://gmail.us1.list-manage.com/subscribe/post?u=837031f7e19636f9a2f6d62c1&amp;id=ff6d3fd1f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="mc-field-group">
+            <input type="text" value="" name="FNAME" class="required form-control" id="mce-FNAME" placeholder="Your Name">
+          </div>
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your Email">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+          </form>
+        </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class=" col-md-5">
     
-    <div class="col-md-8">
+    <!--<h2>Latest Project</h2>
+    <p>Verity - <a href="http://getverity.co">Visit Site</a></p>
+    <p>A crowdfunding platform designed with trans and gender-variant folks in mind.</p>
+      <!--<img src="{{asset "images/verity_thumb.jpg"}}" class="img-responsive img-circle" alt="Verity screenshot">-->
+  </div>
+  <div class="col-md-5">
+    <h2>Writing</h2>
+    {{#foreach posts}} {{! Each post will be output using this markup }}
+        <ul>
+         <li> <p><a href="{{url}}">{{title}}</a> <small class="author">published {{date published_at timeago="true"}}</small></p></li>
+        </ul>
+    {{/foreach}}
+  </div>
+</div>
+
+    
+    <!--<div class="col-md-8">
       {{#foreach posts}} {{! Each post will be output using this markup }}
       <article class="articles">
           <h1 class="title"><a href="{{url}}">{{title}}</a></h1>
@@ -26,5 +77,5 @@
             </section>
       </article>
       {{/foreach}}
-    </div>
+    </div>-->
 </section>

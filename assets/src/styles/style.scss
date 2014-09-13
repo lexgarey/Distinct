@@ -1,3 +1,6 @@
+@import "home";
+@import "footer";
+
 body {
   margin-top: 0;
   font-family: 'Lato', Helvetica;
@@ -158,15 +161,7 @@ a {
   padding: 2%;
 }
 
-.social a {
-  font-size: 25px;
-  color: #666;
-  padding: 1%;
-  &:hover {
-  color: #d46257;
-  text-decoration: none;
-  }
-}
+
 
 .img-responsive {
   margin: 0 auto;
@@ -215,21 +210,6 @@ a {
     -web-kit-transition: all 1s ease-in-out;
       -moz-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
-}
-
-.footer {
-  margin-top: 3.5%;
-  background: #d46257;
-  padding: 1%;
-  color: #FFF;
-  text-align: center;
-  a {
-    color: #fff;
-    text-decoration: underline;
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
 
 

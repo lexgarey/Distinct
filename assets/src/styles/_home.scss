@@ -1,0 +1,43 @@
+$primary-color: #d44e42;
+
+.red-head {
+  ul {
+    margin-top: 2%;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-left: 2%;
+    }
+  }
+}
+
+.intro {
+  .hi {
+    color: $primary-color;
+    margin-top: 0;
+  }
+  margin-bottom: 5%;
+  
+  .social {
+    text-align: center;
+    padding: 3%;
+    a {
+      font-size: 25px;
+      color: $primary-color;
+      padding: 1%;
+      &:hover {
+        color: #666;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        -web-kit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+           -o-transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+
+  hr {
+    border-top: 20px solid $primary-color;
+    width: 80%;
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 3.5%;
+  background: #FFF;
+  padding: 1%;
+  text-align: right;
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
