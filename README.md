@@ -2,25 +2,20 @@
 
 ![Distinct screenshot](screenshot.png)
 
-A minimal theme for Ghost, using Starter.ghost for a base
+A minimal theme for Ghost. Heavy handcoded stuff in here due to Ghost's minimal feature set, but should be easy enough to change.
 
 ### Features
 
- - Twitter Bootstrap 3, normalize.css, Font Awesome
- - SCSS with [lib-sass][2] (written on C)
- - Grunt.js, Bower
- 
-### Install and use
- - Clone this repository to `/content/themes`: ``git clone https://github.com/theaqua/Starter.ghost.git Starter`` (**important:** Ghost.js have bug with dots in theme's name, you must not use ``Starter.ghost`` name, only ``Starter``)
- - In Ghost's settings change "Theme" preference, restart Ghost (yes, I'm serious)
- - Go to ``/content/themes/Starter``, make ``npm install && bower install``
+ - Skeleton based on [Starter.ghost][1] by [theaqua][2]
+ - Uses Twitter Bootstrap 3, SASS, Grunt, & Bower
+ - Custom logo available using Ghost
+
+### Installation & Stuff
+ - Clone this repository to `/content/themes`: ``git clone https://github.com/lexgarey/Distinct.git`` 
+ - In Ghost's settings change "Theme" preference, restart Ghost (otherwise it won't reflect your new theme)
+ - Go to ``/content/themes/Distinct``, make ``npm install && bower install``
  - Run ``grunt serve`` (for live compiling ``.scss`` files and concat ``.js`` files) or ``grunt`` for build
  
-### Roadmap
- - Clean theme
- - Add livereload, html/css/js minify (bower components too)
- - Accept pull requests
 
-  [1]: http://gm4.in/i/fgl.png
-  [2]: http://libsass.org/
-  [3]: https://github.com/theaqua/Supernova.ghost
+  [1]: https://github.com/theaqua/Starter.ghost
+  [2]: https://github.com/theaqua/
