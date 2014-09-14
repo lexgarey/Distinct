@@ -153,6 +153,9 @@ a {
     font-size: 1em;
     line-height: 1.5; }
 
+.work {
+  margin-bottom: 2%; }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -173,43 +176,16 @@ a {
 .content {
   margin-top: 3%; }
 
-.about {
-  padding: 2%; }
-
 .img-responsive {
   margin: 0 auto; }
 
-.piece {
-  height: 50%;
-  width: 50%; }
-
-.description {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -web-kit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out; }
-
 @media only screen and (max-width: 767px) {
-  #navigation {
-    margin-top: 5%;
-    padding-left: 1%;
-    float: none;
-    text-align: center; }
   .title, .author {
     text-align: center; }
-  .sidebar {
-    margin-top: 5%; }
   .footer {
     padding-top: 5%; } }
 
 @media only screen and (max-width: 961px) {
-  .heading {
-    text-align: center; }
-  #navigation {
-    margin-top: 5%;
-    float: none;
-    text-align: center; }
   .title, .author {
     text-align: center; }
   .sidebar {

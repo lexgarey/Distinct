@@ -1,9 +1,10 @@
 {
-  "name": "Starter.ghost",
+  "name": "Distinct",
   "version": "0.1.0",
   "dependencies": {
     "bootstrap": "",
     "normalize-css": "",
-    "font-awesome": ""
+    "font-awesome": "",
+    "photoset-grid"
   }
 }
